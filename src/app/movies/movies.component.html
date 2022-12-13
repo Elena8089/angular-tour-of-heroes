@@ -1,0 +1,30 @@
+<h2> Movies</h2>
+
+
+<ul class="movies-menu">
+  <li *ngFor="let movie of movies">
+     <button [class.selected]="movie === selectedMovie" type="button" (click)="onSelect(movie)">
+      <span class="title"> {{movie.movieTitle}}, </span>
+      <span class="badge"> {{movie.year}} </span>
+    </button>
+    
+  </li>
+</ul>
+
+<div *ngIf="selectedMovie">
+    <div><h2>{{selectedMovie.movieTitle|uppercase}}</h2> </div>
+        <h2> Details</h2>
+ <div class="movies-info">
+    <div>Year: {{selectedMovie.year}}</div>
+    <div>Director: {{selectedMovie.director}}</div> 
+    <div>Genre: {{selectedMovie.genre}}</div>
+    <div>Country: {{selectedMovie.country}}</div>
+    <div>Actors: {{selectedMovie.actors}}</div>
+    <div>Age limit: {{selectedMovie.ageLimit}}</div>
+    <div>Duration: {{selectedMovie.duration}}</div>
+ </div>
+</div>
+
+
+
+

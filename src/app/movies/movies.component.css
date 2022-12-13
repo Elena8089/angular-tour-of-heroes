@@ -1,0 +1,65 @@
+h2 {
+  text-align: center;
+}
+
+.movies-menu {
+  padding: 0;
+  margin: auto;
+  max-width: 1000px;
+}
+
+  .movies .title {
+    font-size: big;
+    color: rgb(45, 44, 54);
+  }
+ 
+  .movies-info {
+   padding: 1em 1em 1em 1em;
+  margin: auto;
+  max-width: 1000px;
+  }
+
+  .movies .badge {
+    display: inline-block;
+    font-size: small;
+    color: white;
+    padding: 1em 1em 1em 1em;
+    background-color: #738597;
+    line-height: 1em;
+    position: relative;
+    left: -1px;
+    top: -4px;
+    height: 1.3em;
+    min-width: 16px;
+    text-align: right;
+    margin: 2em 2em 2em 2em;
+    border-radius: 4px 4px 4px 4px;
+  }
+  
+  .movies .button {
+  
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: black;
+    font-size: 1.2rem;
+    padding: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    min-width: 50%;
+  }
+   
+  .movies a:hover {
+    color: #2c3a41;
+    background-color: #e6e6e6;
+  }
+  
+  .movies a:active {
+    background-color: #525252;
+    color: #fafafa;
+  }
+  
+ 
+  
+  
